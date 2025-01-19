@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+  }
+  .trigram {
+    display: flex;
+    align-items: center;
+  }
+  .main-class {
+    align-items: center;
+    flex-direction: column;
+  }
+  .bottom-link > a {
+    right: -20px;
+  }
+  .logo-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .logo-content .jumbotron-service-logo-icons {
+    justify-content: center;
+    align-items: end;
+  }
+  #card {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .features {
+    align-items: flex-end;
+    bottom: 25%;
+  }
+  form {
+    align-items: flex-end;
+    justify-content: center;
+  }
+  #infor {
+    justify-content: flex-start;
+  }
+  .column {
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  .nav-link {
+    display: none;
+  }
+  .trigram {
+    display: flex;
+    align-items: center;
+  }
+  .main-class {
+    align-items: center;
+    flex-direction: column;
+  }
+  .bottom-link > a {
+    right: -20px;
+  }
+  .logo-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .logo-content .jumbotron-service-logo-icons {
+    justify-content: center;
+    align-items: end;
+  }
+  .steps {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .line {
+    display: none;
+  }
+  .pricing-card {
+    flex-direction: column;
+  }
+  .mid-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
