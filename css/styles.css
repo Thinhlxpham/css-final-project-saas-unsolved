@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,10 +17,9 @@ body {
   background-color: #ffffff;
   border-bottom: outset;
 }
-.trigram {
+.menu-bar {
   visibility: hidden;
 }
-
 #logo {
   margin-right: 2rem;
 }
@@ -70,7 +75,7 @@ body {
   padding: 20px;
 }
 .main-class > h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
@@ -92,7 +97,7 @@ button {
   border-radius: 20px;
   transition: all 0.3s ease;
 }
-button img {
+button [name="play"] {
   margin-right: 10px;
   background-color: white;
   border-radius: 50%;
@@ -101,19 +106,18 @@ button img {
 .bottom-link > a {
   position: relative;
   left: 180px;
-  bottom: 40px;
+  bottom: 30px;
   color: #007bff;
   text-decoration: none;
   font-size: 15px;
 }
 
 .logo-content .jumbotron-service-logo-icons {
-  width: 100%;
+  width: 30%;
   height: 100%;
-  position: relative;
-  left: 1800px;
-  bottom: 350px;
-  margin: auto;
+  position: absolute;
+  left: 60%;
+  bottom: -300px;
 }
 .logo-content .jumbotron-service-logo-icons .jumbotron-service {
   position: absolute;
@@ -128,31 +132,31 @@ button img {
 }
 .logo-content .jumbotron-service-logo-icons .google {
   top: -100px;
-  left: -150px;
+  left: 150px;
 }
 .logo-content .jumbotron-service-logo-icons .google-ads {
-  top: 300px;
-  right: 90px;
+  top: 280px;
+  left: 200px;
 }
 .logo-content .jumbotron-service-logo-icons .atlassian {
   top: -80px;
-  right: -50px;
+  left: 300px;
 }
 .logo-content .jumbotron-service-logo-icons .asana {
   top: -120px;
-  left: 250px;
+  left: 500px;
 }
 .logo-content .jumbotron-service-logo-icons .paypal {
-  top: 150px;
-  left: -200px;
+  top: 100px;
+  left: 130px;
 }
 .logo-content .jumbotron-service-logo-icons .weave {
-  top: 150px;
-  right: -80px;
+  top: 100px;
+  left: 400px;
 }
 .logo-content .jumbotron-service-logo-icons .calendar {
   top: 320px;
-  left: 250px;
+  left: 600px;
 }
 .logo-content .jumbotron-service-logo-icons .service-big {
   height: 90px;
@@ -171,7 +175,7 @@ h1 {
 .elements {
   margin-top: 80px;
   font-family: sans-serif;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -186,7 +190,7 @@ h1 {
   margin-right: 30px;
   font-size: 1.5rem;
   color: #666;
-  max-width: 800px;
+  width: 800px;
   text-align: center;
 }
 
@@ -204,7 +208,7 @@ h1 {
 }
 .line {
   position: absolute;
-  margin-left: 100px;
+  margin-left: 70px;
   bottom: 8px;
   width: 400px;
   height: 1px;
@@ -229,15 +233,16 @@ h1 {
 }
 .pricing-card {
   display: flex;
-  width: 1600px;
+  width: 80%;
   margin: auto;
   gap: 50px;
 }
 #card {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   background-color: #fffefe;
-  padding: 40px;
+  padding: 50px;
   height: 100%;
   width: 500px;
   border-style: outset;
@@ -286,11 +291,6 @@ h1 {
   color: #666;
 }
 
-.pricing-card hr {
-  border-top: 1px solid #ddd;
-  margin: 20px 0;
-}
-
 .pricing-card p {
   margin-bottom: 20px;
   display: flex;
@@ -309,6 +309,7 @@ h1 {
   cursor: pointer;
   width: 180px;
 }
+
 .mid-header {
   margin-top: 70px;
   font-family: sans-serif;
@@ -316,7 +317,7 @@ h1 {
   background-color: #032264;
   padding: 30px;
   border-radius: 5px;
-  min-width: 100%;
+  width: 100%;
   height: 80vh;
 }
 .header {
@@ -328,22 +329,33 @@ h1 {
 }
 .about-us {
   position: relative;
-  bottom: -50px;
-  left: 20%;
+  bottom: -150px;
+  left: 30px;
 }
 .about-us > p {
   text-align: left;
 }
+.about-us > hr {
+  width: 25%;
+  margin: 50px;
+  margin-left: 10px;
+}
 .quote {
-  border-top: 5px solid #ccc;
   padding-left: 15px;
   margin-bottom: 20px;
   width: 20%;
 }
-.quote > img {
-  border-radius: 50%;
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.quote > p {
+.person > img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.person > p {
   text-align: left;
 }
 .quote > .description {
@@ -361,8 +373,8 @@ form {
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 50%;
-  top: -500px;
+  left: 45%;
+  top: -450px;
 }
 
 .name > p {
@@ -416,20 +428,27 @@ form {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-.checkbox {
+.checkbox > p {
   display: flex;
+  margin-left: 50px;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   color: #232426;
   width: 70%;
 }
 
 .link {
   display: flex;
+  margin-left: 70px;
+  color: #5c5c5c;
   flex-direction: row;
-  gap: 20px;
-  justify-content: center;
+  gap: 40px;
+  justify-content: flex-start;
+}
+.link > a {
+  color: #007bff;
+  text-decoration: none;
 }
 .author {
   font-style: italic;
@@ -454,13 +473,15 @@ form {
 }
 footer {
   background-color: #ffffff;
+  width: 100%;
 }
 
 .main-footer {
-  width: 1600px;
+  width: 90%;
   margin: 0 auto;
+  margin-top: 30px;
   display: flex;
-  gap: 40px;
+  gap: 50px;
 
   color: #5c5c5c;
 }
@@ -480,8 +501,9 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.text-logo img {
-  width: 20px;
+.text-logo > a {
+  color: #007bff;
+  text-decoration: none;
 }
 
 .column {
@@ -496,7 +518,6 @@ footer {
 
 .column ul {
   list-style: none;
-  color: black;
   padding: 0;
 }
 
@@ -505,7 +526,7 @@ footer {
 }
 
 .column a {
-  color: #007bff;
+  color: #322f2f;
   text-decoration: none;
 }
 

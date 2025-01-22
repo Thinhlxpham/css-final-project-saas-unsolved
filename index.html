@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
-    <script src="https://use.fontawesome.com/3f1495bd79.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Saas company</title>
   </head>
   <body>
@@ -14,7 +14,9 @@
         <div id="logo">
           <img src="./assets/logos/logo-front.svg" alt="logo-main" />
         </div>
-        <button class="trigram"><i class="fa fa-bars"></i></button>
+        <div class="menu-bar">
+          <box-icon name="menu" rotate="180"></box-icon>
+        </div>
         <ul class="nav-link">
           <li><a href="#">Home</a></li>
           <li><a href="#">Feature</a></li>
@@ -27,19 +29,10 @@
     </header>
     <main>
       <div class="main-class">
-        <h1>
-          Empowering <br />
-          teams with the <br />
-          freedom
-        </h1>
+        <h1>Empowering teams with the freedom</h1>
         <p>Own the unlimit power of the web developer</p>
         <button>
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs
-            4c6QAAALhJREFUWEft1rENwkAQRNHvTqnBMRRBjuRKyOmDhJwGkCVfgizk25kVF6wL8D3N7No3McAzDWCgEK2FSqKS+N7IozNxAp7A
-            PWOlexALcAMuwMuJ6UWsZ783yNUFiSDa2Q/g7KhIQTSMXJEDIVfkQkgVuRGhirIQraJ5W+ufi5SF6BpWNyK0ti6E9AFzILqi3xsOBR
-            GK3oWQoncg5OhVxN/vE66/9u57jg5mIVITqCt/9MqfWssQ2/EBYUwxIp5KcAgAAAAASUVORK5CYII="
-          />
+          <box-icon name="play"></box-icon>
           Play Video
         </button>
         <p class="bottom-link">
@@ -73,7 +66,7 @@
       </div>
       <div class="elements">
         <h1>Why Front?</h1>
-        <span id="paragraph">
+        <span class="paragraph">
           Front is an incredibly beautiful, fully responsive, and mobile-first
           projects on the web - it is the starting point for creative sites
         </span>
@@ -103,8 +96,8 @@
 
       <div class="pricing-section">
         <h3>Pricing</h3>
-        <span id="paragraph"
-          >No additional costs. Pay for what you use for the price option.</span
+        <span class="paragraph">
+          No additional costs. Pay for what you use for the price option.</span
         >
       </div>
       <div class="pricing-card">
@@ -119,12 +112,7 @@
             questions asked.
           </p>
           <button aria-label="Play video about Front pricing">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs
-            4c6QAAALhJREFUWEft1rENwkAQRNHvTqnBMRRBjuRKyOmDhJwGkCVfgizk25kVF6wL8D3N7No3McAzDWCgEK2FSqKS+N7IozNxAp7A
-            PWOlexALcAMuwMuJ6UWsZ783yNUFiSDa2Q/g7KhIQTSMXJEDIVfkQkgVuRGhirIQraJ5W+ufi5SF6BpWNyK0ti6E9AFzILqi3xsOBR
-            GK3oWQoncg5OhVxN/vE66/9u57jg5mIVITqCt/9MqfWssQ2/EBYUwxIp5KcAgAAAAASUVORK5CYII="
-            />
+            <box-icon name="play"></box-icon>
             Play Video
           </button>
           <p>No credit card required</p>
@@ -170,109 +158,107 @@
         </div>
       </div>
     </main>
-    <div class="mid-header">
-      <div class="about-us">
-        <h1 class="header">Hire Us</h1>
-        <p>Whatever your goal - we will get you there</p>
-
-        <div class="quote">
-          <p class="description">
-            "I love Front! I love the ease of use, I love the fact that I have
-            total creative freedom..."
-          </p>
-          <h4 class="author">Charlotte Moore</h4>
-          <p>Head of Commercials, Slack</p>
-          <img src="./assets/images/man_one.jpg" alt="man-pic" />
-        </div>
-      </div>
-      <form>
-        <div class="name">
-          <p>Fill out the form and we'll be in touch as soon as possible</p>
-
-          <div class="row">
-            <div>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                required
-                placeholder="First-name"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                required
-                placeholder="Last-name"
-              />
-            </div>
-          </div>
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Email"
-          />
-          <div class="row">
-            <div>
-              <select id="budget" name="budget">
-                <option value="">Select Budget</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-              </select>
-            </div>
-            <div>
-              <select id="country" name="country">
-                <option value="">Select Country</option>
-                <option value="usa">USA</option>
-                <option value="uk">UK</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-          </div>
-
-          <textarea
-            id="message"
-            name="message"
-            required
-            placeholder="Tell us more about your project, needs, and timeline,
-          please..."
-          ></textarea>
-        </div>
-        <div class="checkbox">
-          <p>
-            Yes, I'd like to receive occasional marketing emails from Front
-            <br />. I have the right to opt out at any time.
-          </p>
-        <div class="link">
-          <span>View privacy policy</span>
-          <a href="#" target="_blank">View privacy policy</a>
-        </div>
-        <div class="submit">
-          <button type="submit">Get Started</button>
-        </div>
-      </form>
-    </div>
-
     <footer>
+      <div class="mid-header">
+        <div class="about-us">
+          <h1 class="header">Hire Us</h1>
+          <p>Whatever your goal - we will get you there</p>
+          <hr />
+          <div class="quote">
+            <p class="description">
+              "I love Front! I love the ease of use, I love the fact that I have
+              total creative freedom..."
+            </p>
+            <div class="person">
+              <h4 class="author">Charlotte Moore</h4>
+              <p>Head of Commercials, Slack</p>
+              <img src="./assets/images/man_one.jpg" alt="man-pic" />
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="name">
+            <p>Fill out the form and we'll be in touch as soon as possible</p>
+
+            <div class="row">
+              <div>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  placeholder="First-name"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  placeholder="Last-name"
+                />
+              </div>
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Email"
+            />
+            <div class="row">
+              <div>
+                <select id="budget" name="budget">
+                  <option value="">Select Budget</option>
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+              <div>
+                <select id="country" name="country">
+                  <option value="">Select Country</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Tell us more about your project, needs, and timeline,
+          please..."
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <p>
+              Yes, I'd like to receive occasional marketing emails from Front
+              <br />. I have the right to opt out at any time.
+            </p>
+          </div>
+          <div class="link">
+            <span>View privacy policy</span>
+            <a href="#" target="_blank">View privacy policy</a>
+          </div>
+          <div class="submit">
+            <button type="submit">Get Started</button>
+          </div>
+        </form>
+      </div>
       <div class="main-footer">
         <div id="infor">
           <div class="logo">
             <img src="./assets/logos/logo-front.svg" alt="Front Logo" />
           </div>
           <div class="text-logo">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAAehJREFUWEftl0srRVEYhh+XZCaF3BIGGBhKImQit3KfkEuJuZL8Cf6AS4mMKCkiEwMzv8BE/AGXzEg5b+2t1W6fvZe99znOwKozOO21vvdZ63u/b+2dRw6MvBxg4B/CzUK2TqIDmADagQNg17RBJiE6gUlgCqgzRO+BlkxBaEMSlqh+tWlMfwqMJwkh4S5g2tl1jUW1zQJHcSEk3G0IV1kIu1M+gDLgPQpEPtDjCMtglb8QNqeeAaPetUHGLAB6DeGKiMLmsjngMAxCwn2OsMxTnoBwYCr00DyJEuAWaE1QODQVXgjV8qMHLEke31R4IfR/Hth0HJwkwKeT2je/oH7GLAIWgLVUPTclRHIOjKSLFVQdejYGrAPq/XHGIrAfBcJco+YkmOEInvkCSr0NKkqzctc0AxvADKC02YwLBz7t3Ki3qCpJt2GxBUVgKvyqwyLmz5QtYDVkQWgq4kJUA09AYQDIJTAYtrOo6XDjyvHqLenGUuqFZi/TEOoj8obfUCp06T1nGkLx1YiGfISugIEwgLiecOPrur/xEVtOveLtZAtCOndAmyFonYqkTkJx9LZ1YkBcA/02p5AkhKrsAah3hFeA7WxDSE/fGMepBqbrugF4+QsIaTYCrzZlaQLGbVa2mw2clxMQ3xkkPiKh1aCXAAAAAElFTkSuQmCC"
-            />
+            <box-icon name="navigation" type="solid"></box-icon>
             <span>153 Willaminson Plaza, Maggieberg</span> <br />
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAAi1JREFUWEft1kvoTVEUx/HPHxETAxmYMTBQZoTkUZKU8kqUImZCGJiJYmCEgcfIIykTSjFBSgzkEUUkDAxEMZAIZeBxVp1/Xbd9ztn38a//4L/rTu5e67e+Z+291toDhsEaGAYMRiAGT6EpE/OwDUfwYqiOrg5iK05jNL5gPl4NBUgKYhSOYk9bwA+YhU/9BklBnML2ikDPsADf+wmSgniLaTVBbmIFfvcLJAXxBtMbApxH3Jm+rBTEA8zNUN9b3p0M03qTFMQVrMlQfoLZGXaNJimIQ8V572/w/ImluN8YIcMgBbESV2t8v5YAjzP0s0xSEBPK5jQ2ofAZi/AySz3TqKpjXsfyhEa08YeZ2tlmVRDrcDmhsgGXstUzDasgxuAdprTpREXMwZ9M/SyzugG2AycTKvtwuEZ9NY4VDe9iAXsAf5tI6iBi7055EVt1ol3HRH2UEI92HpUVkzdWHN1m/KoDaXpPTMVTTGwT+YGNuNby/2LEXBnXZnsXUfbfqkCaIMJvCW4hRnz7ulCmPQLcxviKQM+xrHggfUzt50CEXwyrc01n27D/vmxyr9vtciHCbwvOtJx3N0yRsaiu/0A6gYig8aCJATe5G4LS53jRkXe3+ncKEb6TcBarugCJcl2Ie71CDPqvxUHM7ABmV/ERJ3q5E1Wxono2FUNtPWL4Va14u+7spTpyPjb6Q6Q67k1kZ0b5i/Z/o3w8J9t9N3ciB6gjmxGIwXQNi0z8A7gQTiL3XoB4AAAAAElFTkSuQmCC"
-            />
+            <box-icon name="phone" type="solid"></box-icon>
             <a href="#">+1 (062) 109-9222</a>
           </div>
         </div>
