@@ -17,8 +17,12 @@ body {
   background-color: #ffffff;
   border-bottom: outset;
 }
-.menu-bar {
-  visibility: hidden;
+.trigram {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 #logo {
   margin-right: 2rem;
@@ -79,6 +83,7 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
+  text-align: left;
 }
 p {
   font-size: 1.2rem;
@@ -217,11 +222,11 @@ h1 {
 .circle {
   position: absolute;
   bottom: 5%;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #4285f4;
-  box-shadow: 5px 10px 2rem 8px #6a95d9;
+  box-shadow: 10px 10px 4rem 15px #6a95d9;
   margin-left: 20px;
 }
 .pricing-section {
@@ -233,7 +238,7 @@ h1 {
 }
 .pricing-card {
   display: flex;
-  width: 80%;
+  max-width: 1500px;
   margin: auto;
   gap: 50px;
 }
@@ -317,7 +322,11 @@ h1 {
   padding: 30px;
   border-radius: 5px;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
+}
+.about-us form {
+  max-width: 1200px;
+  margin-left: 35px;
 }
 .header {
   color: white;
@@ -328,7 +337,7 @@ h1 {
 }
 .about-us {
   position: relative;
-  bottom: -150px;
+  bottom: -100px;
   left: 30px;
 }
 .about-us > p {
@@ -374,6 +383,29 @@ form {
   position: relative;
   left: 45%;
   top: -450px;
+}
+#firstName {
+  width: 70%;
+  height: 70%;
+}
+#lastName {
+  width: 70%;
+  height: 70%;
+}
+#email {
+  width: 83%;
+  height: 10%;
+}
+#budget {
+  width: 70%;
+  height: 70%;
+}
+#country {
+  width: 70%;
+  height: 70%;
+}
+#message {
+  width: 83%;
 }
 
 .name > p {
@@ -481,7 +513,7 @@ footer {
   margin-top: 30px;
   display: flex;
   gap: 50px;
-
+  padding: 30px;
   color: #5c5c5c;
 }
 
