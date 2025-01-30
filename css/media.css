@@ -23,11 +23,11 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100%;
-    margin-bottom: 60%;
+    margin-bottom: 50%;
   }
   .main-class > button {
     position: relative;
-    left: -60px;
+    left: -40px;
   }
   button {
     display: flex;
@@ -36,30 +36,65 @@ body {
   .logo-content .jumbotron-service-logo-icons {
     height: 100%;
     position: absolute;
-    bottom: -700px;
-    left: -64px;
+    bottom: -670px;
+    left: -20px;
+  }
+  .logo-content .jumbotron-service-logo-icons .paypal {
+    top: 50px;
+  }
+  .logo-content .jumbotron-service-logo-icons .calendar {
+    top: 250px;
+    left: 400px;
+  }
+  .logo-content .jumbotron-service-logo-icons .google-ads {
+    top: 200px;
+  }
+  .logo-content .jumbotron-service-logo-icons .asana {
+    top: -100px;
+    left: 450px;
   }
 
-  .paragraph {
-    width: 100%;
-    font-size: 15px;
+  .elements span {
+    width: 40rem;
+    align-self: center;
+    margin-bottom: 30px;
   }
-  .elements {
-    margin-bottom: 15%;
-    width: 100%;
-  }
+
   .steps {
-    margin-top: 5%;
-    width: 100%;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
-  .step {
-    width: 50%;
+
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
   }
-  .line {
-    width: 120px;
-    margin-left: 50px;
+  .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    background-color: #ecf2ff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
   }
+  .inner-circle {
+    background-color: #0606f5;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+  }
+
   .pricing-section {
     margin-bottom: 15%;
   }
@@ -111,7 +146,7 @@ body {
   .person {
     width: 60%;
     position: relative;
-    right: -450px;
+    right: -360px;
     bottom: 200px;
   }
   .mid-header {
@@ -121,77 +156,48 @@ body {
     margin-left: 5px;
     height: 60%;
   }
-  .checkbox > p {
-    margin-left: 20px;
-    text-align: left;
-    width: 90%;
-  }
-  .link {
-    margin-left: 15px;
-    align-items: flex-start;
-  }
-  #firstName {
-    width: 70%;
-    height: 70%;
-  }
-  #lastName {
-    width: 70%;
-    height: 70%;
-  }
-  #email {
-    width: 83%;
-    height: 10%;
-  }
-  #budget {
-    width: 70%;
-    height: 70%;
-  }
-  #country {
-    width: 70%;
-    height: 70%;
-  }
-  #message {
-    width: 83%;
-  }
-  form {
-    height: 60%;
-    width: 100%;
+  .form {
     position: relative;
-    left: -15px;
-    top: -200px;
+    top: -40px;
+    left: 35px;
   }
   .main-footer {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
   }
   .column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50px;
   }
 
   #infor {
-    width: 40%;
-    height: 100%;
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
   }
 }
 @media (max-width: 375px) {
-  .nav-link {
-    display: none;
-  }
   .trigram {
     display: flex;
     justify-content: flex-end;
+    background-color: white;
+    border: none;
+  }
+  .nav-link {
+    display: none;
+  }
+  .bottom-link a {
+    position: relative;
+    left: 90px;
   }
   .main-class {
     align-items: center;
     flex-direction: column;
     height: 100%;
-    margin-bottom: 60%;
+    margin-bottom: 50%;
   }
-
   .main-class > button {
     position: relative;
     left: -60px;
@@ -203,26 +209,33 @@ body {
   .logo-content .jumbotron-service-logo-icons {
     height: 100%;
     position: absolute;
-    margin-bottom: 60px;
-    top: 10px;
-    left: 0.5rem;
+    bottom: -650px;
+    left: -50px;
   }
-  .elements {
-    margin-bottom: 15%;
+  .logo-content .jumbotron-service-logo-icons .google {
+    left: 55px;
   }
-  .steps {
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
+  .logo-content .jumbotron-service-logo-icons .paypal {
+    top: 40px;
+    left: 40px;
   }
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .logo-content .jumbotron-service-logo-icons .calendar {
+    top: 100px;
+    left: 300px;
   }
-  .line {
-    display: none;
-    list-style-type: none;
+  .logo-content .jumbotron-service-logo-icons .google-ads {
+    top: 60px;
+  }
+  .logo-content .jumbotron-service-logo-icons .asana {
+    top: -100px;
+    left: 300px;
+  }
+  .logo-content .jumbotron-service-logo-icons .atlassian {
+    left: 200px;
+  }
+  .logo-content .jumbotron-service-logo-icons .weave {
+    top: 0.3rem;
+    left: 120px;
   }
   .pricing-section {
     margin-bottom: 15%;
@@ -238,67 +251,75 @@ body {
     text-align: center;
   }
   hr {
-    width: 80%;
+    width: 100%;
   }
-  .features {
-    gap: 20px;
-    display: flex;
+
+  .elements span {
+    width: 30rem;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+  .steps {
     flex-direction: column;
-    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
   }
   .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 65%;
+    width: 70%;
+    text-align: left;
   }
   .about-us {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .person {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
     position: relative;
-    top: 200px;
-    left: 50%;
+    left: 30px;
+    top: 40px;
   }
-  .submit {
-    margin-left: 50px;
+  .form {
+    max-width: 20rem;
+    height: 52rem;
+    align-self: center;
   }
-  .link > a {
-    display: none;
+  .form input[type="text"],
+  .form select,
+  .form input[type="email"] {
+    width: 18rem;
+    align-self: center;
+    justify-content: center;
   }
-  .name {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 5px;
+  .form textarea {
+    width: 18rem;
   }
   .main-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 375px;
-    gap: 30px;
+    justify-self: center;
+    max-width: 22.5rem;
   }
-  .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
+
+  .main-footer .column {
+    margin: 10px 0;
+  }
+
+  .main-footer .column ul {
+    padding: 0;
+  }
+
+  .main-footer .column ul li {
+    margin: 5px 0;
   }
   #infor {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
-    width: 50%;
   }
 }
