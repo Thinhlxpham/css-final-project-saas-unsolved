@@ -146,7 +146,7 @@ body {
   .person {
     width: 60%;
     position: relative;
-    right: -360px;
+    right: -450px;
     bottom: 200px;
   }
   .mid-header {
@@ -209,7 +209,7 @@ body {
   .logo-content .jumbotron-service-logo-icons {
     height: 100%;
     position: absolute;
-    bottom: -650px;
+    bottom: -700px;
     left: -50px;
   }
   .logo-content .jumbotron-service-logo-icons .google {
@@ -255,7 +255,7 @@ body {
   }
 
   .elements span {
-    width: 30rem;
+    width: 100%;
     align-self: center;
     margin-bottom: 30px;
   }
@@ -265,8 +265,13 @@ body {
     align-items: flex-start;
     justify-content: space-around;
   }
+  .step {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
   .feature {
-    width: 70%;
+    width: 100%;
     text-align: left;
   }
   .about-us {
@@ -281,13 +286,15 @@ body {
     width: 100%;
     text-align: center;
     position: relative;
-    left: 30px;
+    left: 10px;
     top: 40px;
   }
   .form {
     max-width: 20rem;
     height: 52rem;
     align-self: center;
+    position: relative;
+    left: 5px;
   }
   .form input[type="text"],
   .form select,

@@ -237,6 +237,7 @@ h3 {
   max-width: 1500px;
   margin: auto;
   gap: 50px;
+  justify-content: center;
 }
 #card {
   display: flex;
@@ -248,8 +249,8 @@ h3 {
   width: 500px;
   border-style: outset;
   border-radius: 4px;
-  margin-left: 30px;
   margin-bottom: 20px;
+  margin: auto;
 }
 #card > p {
   text-align: left;
@@ -372,10 +373,10 @@ h3 {
   font-style: italic;
 }
 .form {
-  margin-top: 2rem;
+  margin-top: 3rem;
   background-color: #ffffff;
   max-width: 32rem;
-  height: 45rem;
+  height: 42rem;
   border-radius: var(--size-10);
   position: relative;
   left: 60%;
